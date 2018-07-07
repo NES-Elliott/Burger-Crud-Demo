@@ -19,6 +19,6 @@ app.use(bodyParser.urlencoded({
 // override with POST having ?_method=DELETE
 app.use(methodOverride('_method'))
 
-const routes = require('./controllers/') // finish routes line
+const routes = require('./controllers/burgercontroller.js')
 app. use('/', routes)
 app.listen(PORT)
